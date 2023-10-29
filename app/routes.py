@@ -9,7 +9,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/addNote')
+@app.route('/addNote', methods = ["GET", 'POST'])
 def addNote():
     form = forms.AddNoteForm()
+    print(form.title.data)
     return render_template('addNote.html', form = form)
