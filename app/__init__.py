@@ -1,9 +1,15 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
 app = Flask(__name__)
 
-# Load configuration from config.py
-app.config.from_object('config')  
+
+app.config.from_object('config')  # Load configuration from config.py
 '''app.config['SECRET_KEY'] = config.SECRET_KEY'''
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+
+db = SQLAlchemy(app)
+
 # Import routes after initializing the app object
-from app import routes
+from app.routes import *
