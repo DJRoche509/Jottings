@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 
 {% block main %}
-
-
-<h3>Hello World !</h3>
-
-<h4>You are now in the Home page</h4>
-
+    {% for task in tasks %}
+        <div class="card">
+            <div class="card-body">
+                <h3>{{ task.title }}</h3>
+                <p>Added on {{ task.date }}</p>
+                <a href="{{ url_for('editNote, task_id = task_id') }}" class="btn btn-primary">Edit</a>
+                <a href="{{ url_for('deleteNote, task_id = task_id') }}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
