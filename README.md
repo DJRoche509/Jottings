@@ -149,6 +149,7 @@ The app will be accessible at `http://localhost:5000` by default.
 * **Authentication and Authorization:** I plan to implement user authentication and authorization features, allowing users to securely log in, manage their own notes, and ensure data privacy.
 
 <br/>
+
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
