@@ -1,0 +1,48 @@
+.container-fluid {
+    max-width: 55%;
+    padding: 0;
+    margin-bottom: 180px;
+}
+
+.navbar-nav {
+    column-gap: 20px;
+}
+
+.nav-item a{
+    font-weight: normal ;
+}
+
+.nav-item a:hover{
+    min-width: 45px;
+    height: 40px;
+    padding-top: 9px;
+    /* font: .98em/.4 "Fira Sans", sans-serif; */
+    background: rgba(212, 217, 223, 0.87);
+    color: #070101;
+    box-shadow: 2px 4px 0px 0px #616970;
+    transition: ease 800ms all;
+    border-radius: 12px;
+    cursor:pointer ;
+    text-shadow: rgb(82, 142, 204) 0px 1px 0px;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background: rgb(136,203,171);
+    background: linear-gradient(0deg, rgba(52, 54, 53, 0.3) 0%, rgb(231, 232, 236) 100%);
+    padding: 2em;
+    margin-top: 28px;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer p{
+    color: #070101;
+    text-shadow: rgb(82, 142, 204) 0px 1px 0px;
+    text-align: center;
+}
