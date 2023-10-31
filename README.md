@@ -60,16 +60,16 @@ Jottings is a simple web application built with Flask, allowing users to jot dow
   └── run.py                          # Entry point to run the Flask app
 ```
 <br>
-  <span> 
-  <div> - App Home page after adding a few notes</div>
-    <br/>
-    <div><img alt="Pic showing AddNote button triggered " src="https://github.com/DJRoche509/Jottings/assets/100164051/aca3a21f-dc25-443f-90cb-f9d1a4a25e1e"  height="650" width="500"></div>
-  </span> <br/><br/>
-  <span>
-  <div> - Showing preview for a delete Confirmation request operation </div>
-    <br/>
-    <div><img alt="Pic showing AddNote button triggered " src="https://github.com/DJRoche509/Jottings/assets/100164051/0453a5b8-581a-45c3-be5c-e2396592ad45"   height="400" width="500"></div>
-  </span>
+  
+  - App Home page after adding a few notes
+    <br/> <br/>
+    <img alt="Pic showing AddNote button triggered " src="https://github.com/DJRoche509/Jottings/assets/100164051/aca3a21f-dc25-443f-90cb-f9d1a4a25e1e"  height="650" width="500">
+  <br/><br/>
+  
+  - Showing preview for a delete Confirmation request operation
+    <br/> <br/>
+    <img alt="Pic showing AddNote button triggered " src="https://github.com/DJRoche509/Jottings/assets/100164051/0453a5b8-581a-45c3-be5c-e2396592ad45"   height="400" width="500">
+  
 <br/><br/>
 
 ## Installation
@@ -119,21 +119,21 @@ The app will be accessible at `http://localhost:5000` by default.
 
 ## Usage
 1. <span style="font-size:bold"> Homepage:</span>
-  * View all your notes on the homepage.
-  * Each note displays its title and the date it was created.
+    * View all your notes on the homepage.
+    * Each note displays its title and the date it was created.
 2. Adding a Note:
-  * Click on "Add a Note" to create a new note.
-  * Enter the title of your note and click "Submit."
-  * A confirmation message will appear at the top.
+    * Click on "Add a Note" to create a new note.
+    * Enter the title of your note and click "Submit."
+    * A confirmation message will appear at the top.
 3. Editing a Note:
 
-  * Click "Edit" next to the note you want to modify.
-  * Update the title and click "Submit."
-  * The note will be updated, and a confirmation message will appear.
+    * Click "Edit" next to the note you want to modify.
+    * Update the title and click "Submit."
+    * The note will be updated, and a confirmation message will appear.
 4. Deleting a Note:
-  * Click "Delete" next to the note you want to remove.
-  * A confirmation dialog will appear. Click "Delete" to confirm.
-  * The note will be deleted, and a confirmation message will appear.
+    * Click "Delete" next to the note you want to remove.
+    * A confirmation dialog will appear. Click "Delete" to confirm.
+    * The note will be deleted, and a confirmation message will appear.
 <br/><br/>
 
 ## Technologies Used
