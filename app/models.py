@@ -5,9 +5,7 @@ from datetime import datetime, timezone, timedelta
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     title = db.Column(db.String(100), nullable= False)
-    date = db.Column(db.Date, nullable = False)
-    print('item added successfully')
+    date = db.Column(db.DateTime, default=datetime.utcnow() - timedelta(hours=5), nullable = False)
 
     def __repr__(self):
-        utc_date = datetime.now(timezone.utc) - timedelta(hours = 5)
-        return f'{self.title.title()} created on {self.date.strftime("on %A, %B %d, %Y at %I:%M:%S %p CST")}'
+        return f'{self.title.title()} created on {self.date.strftime("%A, %B %d, %Y at %I:%M:%S %p CST")}'
