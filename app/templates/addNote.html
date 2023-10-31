@@ -2,16 +2,18 @@
 
 {% block main %}
 
-<p> Some Content on the Add Note Page!</p>
-<form action="{{ url_for('addNote') }}" method="post">
-    {{ form.csrf_token }}
-    {{ form.title.label }}
-    {{ form.title }}
-    {{ form.submit }}
-</form>
-
-{% if title %}
-    # Show value on UI form (addNote Page)
-    <h1> {{ title }} </h1>
-{% endif %}
+<div class="container-fluid">
+    <form action="{{ url_for('addNote') }}" method="post">
+        {{ form.csrf_token }}
+        <div class="row">
+            <h3>Add Task</h3>
+            <div class="col"> 
+                {{ form.title(class = "form-control") }}                
+            </div>
+            <div class="col">
+                {{ form.submit(class = "btn btn-primary") }} 
+            </div>
+        </div>
+    </form>
+</div>
 {% endblock %}
