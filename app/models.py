@@ -1,5 +1,5 @@
-from app import app, db
-from datetime import datetime, timezone, timedelta
+from app import db
+from datetime import datetime, timedelta
 
 # New class that extends db.Model
 class Task(db.Model):
@@ -8,4 +8,5 @@ class Task(db.Model):
     date = db.Column(db.DateTime, default=datetime.utcnow() - timedelta(hours=5), nullable = False)
 
     def __repr__(self):
-        return f'{self.title.title()} created on {self.date.strftime("%A, %B %d, %Y at %I:%M:%S %p CST")}'
+        # Return task.date to the desired time zone (CST) and format as a string
+        return f'{self.title.capitalize()} created on {self.date.strftime("%A, %B %d, %Y at %I:%M:%S %p CST")}'
