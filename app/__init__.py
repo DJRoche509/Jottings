@@ -1,7 +1,7 @@
-from flask import Flask
+from flask import Flask, redirect, url_for, flash, get_flashed_messages
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 
 app.config.from_object('config')  # Load configuration from config.py
